@@ -45,19 +45,7 @@ const Booksinfo = ({ books, addToCart, cart }) => {
                 </div>
                 <div className="book__summary">
                   <h3 className="book__summary--title">Summary</h3>
-                  <p className="book__summary--para">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Autem delectus, assumenda eius vitae quaerat consequuntur
-                    molestiae quod nam suscipit, consequatur ex cumque ullam rem
-                    explicabo odit? Voluptas facilis ratione architecto.
-                  </p>
-                  <p className="book__summary--para">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Similique sapiente pariatur repellat, dicta, eum earum quas
-                    iste inventore quibusdam incidunt voluptatibus. Culpa
-                    doloribus recusandae eos voluptate beatae temporibus aliquid
-                    asperiores.
-                  </p>
+                  <p className="book__summary--para">{book.summary}</p>
                 </div>
                 {bookExistsOnCart() ? (
                   <Link to={`/cart`}>
